@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+       <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/20200617_112926.jpg" class="header-img" alt="Fotografia del autor">
+      <h1 class="header">Pascual Colón Calderón Pico</h1>
+        <h2 class="subtitle">Curso: 4to "B"</h2>
+
+      <nav class="navigation">
+           <a href="#">Acerca de</a>
+           <a href="#">Mis Proyectos</a>
+           <a href="#">Contacto</a>
+     </nav>
+    </header>
+
+   <main>
+     <section>
+       <h2 class="header"> Acerca de</h2>
+         <p class="intro">
+            Hola 👋 mi nombre es Pascual Calderón, soy Ecuatoriano y vivo en Pacoche, me gusta el atletismo 🏃‍♂️,
+            el futbol ⚽,el voleibol 🏐,viajar🚗,me gusta los gatos🐈,y me esta gustando programar ya sea en Java,
+            Python o c++, aunque no lo domino mucho pero con la práctica se puede lograr, tambien me esta gustando
+            diseñar interfaces aunque soy nuevo en esto, siempre he dibujado paisaje y esto me ha ayudado a entender 
+            el diseño de páginas porque la forma de combinar colores, plasmar concepto, que las personas puedan verlo
+            y entender lo que se quiere transmitir.
+            También en mis pasatiempos trajabo con un grupo de jóvenes, realizando diferentes actividades.<br><br>
+            Aquí puedes ver algunos de mis proyectos recientes y algunos diseños de interfaces que he estado aprendiendo
+            también puedes contactarme conmigo si quieres conocer más sobre mis proyectos, hablar de algún deporte, 
+            o como poder seguir aprendiendo sobre interfaces.
+         </p>
+       <ul class="social-media">
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter"/>
+           <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank">
+            <img src="images/github-logo.png" alt="Github"/>
+            <p class="social-link-text">Github</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><img src="images/linkedin.png" alt="Linkedin"/>
+            <p class="social-link-text">Linkedin</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+   </main>
+    
+   <h2 class="header">Mis Proyectos</h2>
+   <div class="carousel">
+    <button class="arrow arrow-left" aria-label="Boton para ir hacia atras">
+      <img src="images/play-button-left.png"></button>
+    <div class="window">
+      <ul class="project-container">
+        <li  class="project1-container" tabindex="0"><button class="project1 project"><img
+        src="images/project1.png" class="project-img" alt="Mi primer proyecto"></button>
+      </li>
+        <li class="project2-container" tabindex="0"><button class="project2 project"><img
+        src="images/project2.png" class="project-img" alt="Mi segundo proyecto"></button>
+      </li>
+        <li class="project3-container" aria-hidden="true" tabindex="0"><button class="project3
+        project" ><img src="images/project3.png" class="project-img" alt="Mi tercer proyecto"></button>
+      </li>
+        <li class="project4-container" aria-hidden="true" tabindex="0"><button class="project4 project" ><img 
+        src="images/project4.png" class="project-img" alt="Mi cuarto proyecto"></button>
+      </li>
+     </ul>
+    </div>
+    <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante">
+      <img src="images/play-button-right.png"></button>
+  </div>
+
+   <footer class="contact-section">
+       <h2 class="header">Contacto</h2>
+         <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
+            <form class="form-container">
+              <label class="form-label">Nombre</label><input type="text" 
+               placeholder="Escriba su nombre" aria-label="nombre" id="name" />
+              <span id="name-error" aria-live="assertive"></span><br />
+              <label class="form-label">Correo</label><input type="text" 
+               placeholder="Escriba su Correo" aria-label="correo" /> <br />
+              <label class="message-input">Mensaje<input type="text" /> <br/></label>
+             <button class="send-button">Enviar</button>
+           </form>
+   </footer>
+    <div class="notification" aria-live="assertive"></div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
